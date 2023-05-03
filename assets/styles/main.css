@@ -1,0 +1,77 @@
+@import url("./swiper-bundle.min.css");
+@import url("./fonts.css");
+@import url("./header.css");
+@import url("./page.css");
+@import url("./footer.css");
+@import url("./markdownIt.css");
+@import url("./contacts.css");
+@import url("./studentLeisure.css");
+@import url("./composition.css");
+@import url("./home.css");
+@import url("./gallery.css");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Rubik", sans-serif;
+  line-height: 150%;
+}
+
+html {
+  background-color: #fff;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+p + p,
+li + li {
+  margin: 10px 0 0;
+}
+
+a {
+  outline: none;
+  color: rgb(117, 175, 222);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 50px;
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.wrapper-pages {
+  /* max-width: 1440px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex: 1 0 0;
+}
+
+/* mouseFollower */
+.mouseFollower {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  mix-blend-mode: difference;
+  position: fixed;
+  z-index: 10000;
+  top: -5px;
+  left: -5px;
+  pointer-events: none;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}

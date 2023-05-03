@@ -1,0 +1,40 @@
+.composition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.composition_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 230px;
+}
+
+.composition_item_img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+
+.composition_item_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.composition_item_info_title {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.composition_item_info_subtitle {
+  font-size: 16px;
+  text-align: center;
+}
