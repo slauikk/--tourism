@@ -37,6 +37,10 @@ a {
   color: rgb(117, 175, 222);
 }
 
+iframe {
+  border-radius: 10px;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
