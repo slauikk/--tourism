@@ -2,3 +2,10 @@ ul,
 ol {
   padding-left: 50px;
 }
+
+@media (max-width: 500px) {
+  ul,
+  ol {
+    padding-left: 30px;
+  }
+}

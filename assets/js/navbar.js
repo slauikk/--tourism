@@ -1,4 +1,28 @@
 const dropdowns = document.querySelectorAll(".header_nav_dropdown_title");
+const burger = document.querySelector(".header_burger");
+const header_nav = document.querySelector(".header_nav");
+const header = document.querySelector(".header");
+
+burger.addEventListener("click", () => {
+  const currentStatusDropdown = burger.dataset.active;
+  console.log(currentStatusDropdown);
+
+  switch (currentStatusDropdown) {
+    case "true":
+      console.log(1);
+      header.classList.remove("active");
+      header_nav.classList.remove("active");
+      burger.classList.remove("active");
+      burger.dataset.active = false;
+      break;
+    default:
+      console.log(2);
+      header.classList.add("active");
+      header_nav.classList.add("active");
+      burger.classList.add("active");
+      burger.dataset.active = true;
+  }
+});
 
 dropdowns.forEach((dropdown) => {
   dropdown.addEventListener("click", (e) => {

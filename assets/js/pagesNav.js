@@ -1,6 +1,10 @@
 const nav = document.querySelectorAll(".header_nav_item");
 const pages = document.querySelectorAll(".page");
 
+const PBurger = document.querySelector(".header_burger");
+const PHeader_nav = document.querySelector(".header_nav");
+const PHeader = document.querySelector(".header");
+
 function setPage(page) {
   pages.forEach((pagesItem) => {
     pagesItem.classList.add("hidden");
@@ -17,9 +21,27 @@ page ? setPage(page) : setPage("home");
 
 nav.forEach((navItem) => {
   navItem.addEventListener("click", (e) => {
+    window.scrollTo(0, 0);
+
     const page = e.target.dataset.page;
 
     setPage(page);
+
+    //close mobile menu
+    const currentStatusDropdown = PBurger.dataset.active;
+    console.log(currentStatusDropdown);
+
+    switch (currentStatusDropdown) {
+      case "true":
+        console.log(1);
+        PHeader.classList.remove("active");
+        PHeader_nav.classList.remove("active");
+        PBurger.classList.remove("active");
+        PBurger.dataset.active = false;
+        break;
+      default:
+        console.log(2);
+    }
 
     //close dropdown menu
     const element = e.target;

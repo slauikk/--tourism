@@ -21,7 +21,7 @@
   height: min-content;
 }
 
-.gallery_col_item.gallery_col_item_img {
+.gallery_col_item .gallery_col_item_img {
   height: 100%;
 }
 
@@ -51,4 +51,26 @@
 .gallery_col_item_label.b {
   top: auto;
   bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+
+  .gallery_col {
+    flex: auto;
+  }
+
+  .gallery_col_item_label {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+
+    font-size: 14px;
+  }
+
+  .gallery_col_item_label.b {
+    bottom: 5px;
+  }
 }

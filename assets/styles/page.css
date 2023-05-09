@@ -141,8 +141,10 @@
 }
 
 .page_content_inner_content_item_img-v {
+  max-width: 100%;
   width: auto;
-  height: 500px;
+  max-height: 500px;
+  height: auto;
   margin-top: 10px;
 
   border-radius: 10px;
@@ -210,4 +212,38 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 125%;
+}
+
+@media (max-width: 500px) {
+  .page_content {
+    padding: 0 10px 0;
+  }
+
+  .page_content_inner {
+    row-gap: 50px;
+    padding: 15px;
+  }
+
+  .page_content_inner_content_item {
+    padding: 15px;
+  }
+
+  .page_content_header {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .page_content_header_title {
+    font-size: 28px;
+  }
+
+  .page_content_header_des {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .page_content_inner_content_item_title {
+    font-size: 20px;
+  }
 }
