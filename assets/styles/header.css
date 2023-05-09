@@ -140,6 +140,7 @@
 }
 
 .header_burger {
+  display: none;
   position: relative;
   display: flex;
   width: 20px;
@@ -210,6 +211,10 @@
     /* display: none; */
     font-size: 12px !important;
     padding: 0 !important;
+  }
+
+  .header_burger {
+    display: block;
   }
 
   .header_nav {
