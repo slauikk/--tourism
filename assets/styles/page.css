@@ -214,6 +214,21 @@
   line-height: 125%;
 }
 
+.images-inline {
+  display: flex;
+  gap: 10px;
+}
+
+.images-inline-item {
+  display: flex;
+  flex: 1 0 0;
+}
+
+.images-inline-item img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 500px) {
   .page_content {
     padding: 0 10px 0;

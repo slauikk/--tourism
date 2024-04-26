@@ -229,8 +229,8 @@ const programsContent = `
 
 //Дисципліни (силабуси)
 const disciplinesContent = `
-- Технологія і організація туристичного обслуговування [https://eguru.tk.te.ua/course/view.php?id=23](https://eguru.tk.te.ua/course/view.php?id=23)
-- Спеціалізований туризм - [https://eguru.tk.te.ua/course/view.php?id=666](https://eguru.tk.te.ua/course/view.php?id=666)
+- Технологія і організація туристичного обслуговування [https://eguru1.tk.te.ua/course/view.php?id=585)
+- Спеціалізований туризм [https://eguru1.tk.te.ua/course/view.php?id=591]
 - Організація ресторанного обслуговування [https://eguru.tk.te.ua/course/view.php?id=247#section-0](https://eguru.tk.te.ua/course/view.php?id=247#section-0)
 - Туристичні ресурси України [https://eguru.tk.te.ua/course/view.php?id=315](https://eguru.tk.te.ua/course/view.php?id=315)
 - Історія туризму [https://eguru.tk.te.ua/course/view.php?id=665#section-0](https://eguru.tk.te.ua/course/view.php?id=665#section-0)
